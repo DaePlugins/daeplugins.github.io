@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang=tr><head><title>DaePlugins</title><meta name=description content="Bütün ya da belirli araçlara ve onların tekerlerine kimlerin hasar verip, kimler tarafından tamir edileceğini belirler. Sadece tamircilerin arabaları tamir edip, sadece haydutların hasar verebilmesi gibi."><meta name=keywords content=Unturned,RocketMod,Plugin,Daemonn,Dae,DaePlugins><meta name=author content=Daemonn><meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name=theme-color content=#18bc9c /><meta property=og:title content=DaePlugins /><meta property=og:description content="Bütün ya da belirli araçlara ve onların tekerlerine kimlerin hasar verip, kimler tarafından tamir edileceğini belirler. Sadece tamircilerin arabaları tamir edip, sadece haydutların hasar verebilmesi gibi." /><meta property=og:image content=../Resimler/DaePlugins.png /><meta property=og:image:width content=256 /><meta property=og:image:height content=256 /><link rel=icon href=../Resimler/DaePlugins.png><link href=../Tasarım.css rel=stylesheet></head><body style=text-align:center;background:#fff><header class="baş arkaplan-birincil metin-fbeyaz metin-ortalanmış" style=padding-top:36px><h1 style=text-align:center><a href=.. style=color:#fff>Ana Sayfa</a></h1></header><div class=kutu style=col-sm-12><br><br><h1>
+Araç Kontrol</h1>
+<!--<h1><font color=red>Test Aşamasında</font></h1>-->
+<!--<h1><font color=red>Geçici Olarak Kullanım Dışı</font></h1>-->
+<br><div style=text-align:left class="kutu-büyük kutu-değişken">
+
+
+<h2><strong>Yapılandırma</strong></h2><div class=tablo-interaktif><table class="tablo tablo-çizgili tablo-sınırlı tablo-değişken" style=width:100%>
+<tr><th>Ayar</th><th class=metin-ortalanmış>Alabileceği Değerler</th><th>Açıklama</th></tr>
+<tr><td>PatlayanAraçlarSilinsin</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Araçlar patlama anından hemen sonra silinsin mi?</td></tr>
+<tr><td>AraçlarÇarpmalardanHasarAlabilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Araçlar çarpmalardan hasar alsın mı?</td></tr>
+<tr><td>HerkesAraçlaraHasarVerebilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Herkes araçlara hasar verebilsin mi?</td></tr>
+<tr><td>AraçlaraHasarYetkisi</td><td class=metin-ortalanmış><i>Oyuncu kontrolünde.</i></td><td>Araçlara hasar verebilecek kişilere verilecek yetki.</td></tr>
+<tr><td>HerkesTekerlereHasarVerebilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Herkes tekerlere hasar verebilsin mi?</td></tr>
+<tr><td>TekerlereHasarYetkisi</td><td class=metin-ortalanmış><i>Oyuncu kontrolünde.</i></td><td>Tekerlere hasar verebilecek kişilere verilecek yetki.</td></tr>
+<tr><td>HerkesAraçlarıTamirEdebilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Herkes araçları tamir edebilsin mi?</td></tr>
+<tr><td>AraçlarıTamirYetkisi</td><td class=metin-ortalanmış><i>Oyuncu kontrolünde.</i></td><td>Araçları tamir edebilecek kişilere verilecek yetki.</td></tr>
+<tr><td>HerkesCarjackKullanabilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Herkes carjack kullanabilsin mi?</td></tr>
+<tr><td>CarjackYetkisi</td><td class=metin-ortalanmış><i>Oyuncu kontrolünde.</i></td><td>Carjack kullanabilecek kişilere verilecek yetki.</td></tr>
+<tr><td>HerkesBenzinDoldurabilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Herkes araçlara benzin doldurabilsin mi?</td></tr>
+<tr><td>BenzinDoldurmaYetkisi</td><td class=metin-ortalanmış><i>Oyuncu kontrolünde.</i></td><td>Araçlara benzin doldurabilecek kişilere verilecek yetki.</td></tr>
+<tr><td>HerkesBenzinAlabilir</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Herkes araçlardan benzin alabilir mi?</td></tr>
+<tr><td>BenzinAlmaYetkisi</td><td class=metin-ortalanmış><i>Oyuncu kontrolünde.</i></td><td>Araçlardan benzin alabilecek kişilere verilecek yetki.</td></tr>
+<tr><td>ÖzelAraçlarAktif</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Özel araçlar aktif edilsin mi?</td></tr>
+<tr><td>ÖzelAraçlardaVarsaİzinVer</td><td class=metin-ortalanmış><b>true</b> veya <b>false</b></td><td>Etkileşime geçilen araç, özel araçlar listesinde varsa mı eyleme izin verilsin?</td></tr>
+</table></div>
+
+<br><h2><strong>Hakkında</strong></h2>
+<ul><li>Oyunculara herhangi bir yetkiyi verirken başına <b>dae.arackontrol.</b> eklemeyi unutmayın.
+	<ul><li>Örnek 1.A: Yapılandırma dosyasından belirlediğiniz yetki <b>AraçlaraHasarVerebilir</b> ise verceğiniz yetki <b>dae.arackontrol.AraçlaraHasarVerebilir</b> şeklindedir.</li></ul>
+	<ul><li>Örnek 1.B: Yapılandırma dosyasından belirlediğiniz yetki <b>1.ah</b> ise verceğiniz yetki <b>dae.arackontrol.1.ah</b> şeklindedir.</li></ul></li></ul><br>
+
+<ul><li><b>ÖzelAraçlardaVarsaİzinVer</b> ayarı <b>true</b> yapıldığı takdirde, etkileşime geçilen araç <b>ÖzelAraçlar</b> listesinde varsa eyleme izin verilir. Eğer <b>false</b> yapılırsa araç o listede yoksa izin verilir.
+	<ul><li>Örnek 2.A: Sadece <b>Black Offroader</b> ve <b>Black Sedan</b> araçlarının hasar alması, tamir edilmesi vs. isteniyorsa araçlar <b>ÖzelAraçlar</b> listesine eklenip <b>ÖzelAraçlardaVarsaİzinVer</b> ayarının <b>true</b> yapılması gerekiyor.</li></ul>
+	<ul><li>Örnek 2.B: Sadece <b>Black Offroader</b> ve <b>Black Sedan</b> araçlarının hasar almaması, tamir edilememesi vs. isteniyorsa araçlar <b>ÖzelAraçlar</b> listesine eklenip <b>ÖzelAraçlardaVarsaİzinVer</b> ayarının <b>false</b> yapılması gerekiyor.</li></ul></li></ul>
+<ul><li><b>ÖzelAraçlar</b> listesine eklenen araçların özel yetkileri vardır. Yetkiler;
+	<ul><li>Araca Hasar: <b><i>&lt;Aracın Idsi&gt;</i>.ah</b>. Örnek: <b>1.ah</b></li></ul>
+	<ul><li>Tekere Hasar: <b><i>&lt;Aracın Idsi&gt;</i>.th</b>. Örnek: <b>1.th</b></li></ul>
+	<ul><li>Tamir: <b><i>&lt;Aracın Idsi&gt;</i>.t</b>. Örnek: <b>1.t</b></li></ul>
+	<ul><li>Carjack: <b><i>&lt;Aracın Idsi&gt;</i>.c</b>. Örnek: <b>1.c</b></li></ul>
+	<ul><li>Benzin Doldurma: <b><i>&lt;Aracın Idsi&gt;</i>.bd</b>. Örnek: <b>1.bd</b></li></ul>
+	<ul><li>Benzin Alma: <b><i>&lt;Aracın Idsi&gt;</i>.ba</b>. Örnek: <b>1.ba</b></li></ul></li></ul>
+<ul><li><b>Not:</b> <b>ÖzelAraçlar</b> listesi yetkisi olan oyuncuları etkilemez. Yani bir araç listede varsa, hasar alınmayacak şekilde ayarlanmışsa ve bir oyuncunun hasar verme yetkisi varsa, oyuncu yine de hasar verebilir.</li></ul><br>
+
+<ul><li>Eklentinin sorunsuz çalışması için <b>0Harmony</b> kaynak kütüphanesinin <b>Libraries</b> klasöründe bulunması gerekiyor.</li></ul>
+
+
+<div class=metin-ortalanmış>
+<a href=DaeAracKontrol.zip class="buton buton-raised buton-primary" draggable=false><b>İNDİR</b></a>
+</div></div></div></body></html>
